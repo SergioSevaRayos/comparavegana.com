@@ -16,3 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const headerAbajo = document.querySelector('.header-abajo');
+
+    hamburger.addEventListener('click', function() {
+        headerAbajo.classList.toggle('active');
+    });
+});
+
